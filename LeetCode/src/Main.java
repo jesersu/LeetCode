@@ -18,7 +18,7 @@ public class Main {
         //Ejercicio LongestSubstringWithoutRepeatingCharacter
 
         LongestSubstringWithoutRepeatingCharacters.Solution a = new LongestSubstringWithoutRepeatingCharacters.Solution();
-        System.out.println( a.lengthOfLongestSubstring("abcabcabcabc"));
+        System.out.println( a.lengthOfLongestSubstring("bbbbb"));
 
 
     }

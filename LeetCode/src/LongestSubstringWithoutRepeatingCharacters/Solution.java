@@ -16,18 +16,18 @@ public class Solution {
         //ArrayList<Character> noRepeat = new ArrayList<Character>();
         Set<Character> noRepeat = new HashSet<>();
         for (char c : s.toCharArray()){
-            if (noRepeat.contains(c)){
+            if (noRepeat.contains(c)){ //repeat
                 if (max < count) {
                     max=count;
-                    count = 0;
                 }
                 System.out.println("in: " + noRepeat.toString());
-               while(noRepeat.contains(c)){
-                   noRepeat.remove(s.charAt(pointer));
-                   pointer++;
-               }
-               noRepeat.add(c);
-            }else {
+                while(noRepeat.contains(c)){
+                    noRepeat.remove(s.charAt(pointer));
+                    pointer++;
+                }
+                noRepeat.add(c);
+                count= noRepeat.size();
+            }else { //No hay elementos repetidos
                 noRepeat.add(c);
                 count += 1;
 
