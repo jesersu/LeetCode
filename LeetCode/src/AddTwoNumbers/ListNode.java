@@ -8,16 +8,3 @@ public class ListNode {
     ListNode(int val, ListNode next) {this.val = val; this.next = next;}
 }
 
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2){
-        ListNode result = new ListNode();
-        while (l1.next != null){
-            while (l2.next != null){
-                result.val = l1.val + l2.val;
-                break;
-
-            }
-        }
-        return result;
-    }
-}
